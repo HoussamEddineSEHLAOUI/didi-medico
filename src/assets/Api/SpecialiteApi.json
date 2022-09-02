@@ -1,0 +1,63 @@
+{
+    "message": "la Liste des specialites a été recupées avec succès",
+    "data": [
+        {
+            "id": 1,
+            "name": "Cardiologue"
+        },
+        {
+            "id": 2,
+            "name": "Psychiatre/Psychologue"
+        },
+        {
+            "id": 3,
+            "name": "Traumatologue"
+        },
+        {
+            "id": 4,
+            "name": "Oncologue/Cancérologue"
+        },
+        {
+            "id": 5,
+            "name": "Neurologue"
+        },
+        {
+            "id": 6,
+            "name": "Endocrynologue"
+        },
+        {
+            "id": 7,
+            "name": "Gastro"
+        },
+        {
+            "id": 8,
+            "name": "ORL"
+        },
+        {
+            "id": 9,
+            "name": "Ophtalmologue"
+        },
+        {
+            "id": 10,
+            "name": "Hématologue"
+        },
+        {
+            "id": 11,
+            "name": "Gynécologue"
+        },
+        {
+            "id": 12,
+            "name": "Autre"
+        },
+        {
+            "id": 13,
+            "name": "Je ne sais pas"
+        }
+    ]
+}
+
+
+
+
+
+

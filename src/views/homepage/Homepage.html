@@ -1,0 +1,49 @@
+
+<div>
+    <!-- <Loader /> -->
+    <section class="sign-in-page" >
+      <div id="container-inside">
+        <div id="circle-small"></div>
+        <div id="circle-medium"></div>
+        <div id="circle-large"></div>
+        <div id="circle-xlarge"></div>
+        <div id="circle-xxlarge"></div>
+      </div>
+      <div class="p-0 m-0 pageHome">
+        <div class="row nav-bar" v-if="!isLoggedIn">
+          <!-- <p class="signInlbl btn btn-primary d-block mt-3" @click="SignIn">Se connecter</p>
+          <p class="signUplbll btn d-block mt-3" @click="SignUp">S'inscrire</p> -->
+          <ModalSignIn></ModalSignIn>
+          <ModalSignUp></ModalSignUp>
+        </div>
+        <div class="row nav-bar" v-if="isLoggedIn">
+          <p class="signInlbl btn btn-primary d-block mt-3" @click="NewFile">Nouveau dossier</p>
+        </div>
+        <div class="containerTxt">
+          <h1 class="medioc">Medico</h1>
+          <h1 class="medic-citation">Prendre soin de sa santé ne change pas l'issue, mais le trajet</h1>
+          <p class="detail-medico">Lorem ipsum dolor sit amet, consectetur
+            <br/>adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi.
+            <br/>Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus
+            <br/>adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi.
+            <br/>Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus
+            <br/>adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi.
+            <br/>Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus
+          </p>
+          <button class="btnSignIn" v-if="!isLoggedIn"><a href="#wizard" style="color: #ffff;">Nouveau Dossier</a></button>
+          <button class="btnSignIn" @click="NewFile" v-if="isLoggedIn">Nouveau dossier</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- <div class="imageHomme">
+    <div style="position: relative; width: 100%; height: 100vh; padding-top: 100%;padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+            border-radius: 8px; will-change: transform;">
+        <iframe loading="lazy" class="iframeCover"  src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFKDhwXi2k&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+        <WizardNewPatient id="wizard"></WizardNewPatient>
+    </div>
+  </div> -->
+  <!-- <div class="wizardComp">
+    <WizardNewPatient id="wizard"></WizardNewPatient>
+  </div>
+  <FooterHomePage></FooterHomePage> -->

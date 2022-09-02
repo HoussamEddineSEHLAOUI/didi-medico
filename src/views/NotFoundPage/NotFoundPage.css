@@ -1,0 +1,10 @@
+.tittle-error{
+    margin: 40px;
+  }
+  .error-page{
+    height: 100vh;
+  }
+  #lottie-error{
+    width: 100%;
+    height: 80%;
+  }

@@ -1,0 +1,80 @@
+<AlertMessage v-if="isShowAlert" :messsaResp="messsaResp" :typeResp="typeResp"></AlertMessage>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="iq-edit-list-data">
+        <div class="tab-content">
+          <div class="tab-pane fade active show" id="personal-information" role="tabpanel">
+            <div class="iq-card">
+              <div class="iq-card-header d-flex justify-content-between">
+                <div class="iq-header-title">
+                  <h4 class="card-title">Personal Information</h4>
+                </div>
+              </div>
+              <div class="iq-card-body">
+                <form @submit.prevent="updateProfile()">
+                  <div class="form-group row align-items-center">
+                    <div class="col-md-12">
+                      <div class="profile-img-edit">
+                        <img class="profile-pic profileImage" :src="image" alt="profile">
+                        <div class="p-image">
+                          <label for="prfileimg" class="ciconuplodeimg"><i class="ri-pencil-line upload-button"></i></label>
+                          <input id="prfileimg" class="file-upload" type="file" accept="image/*" @change="previewImage">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" row align-items-center">
+                    <div class="form-group col-sm-6">
+                      <label for="fname">First Name:</label>
+                      <input type="text" class="form-control" id="fname" required="required" v-model="first_name">
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label for="lname">Last Name:</label>
+                      <input type="text" class="form-control" id="lname" required="required" v-model="last_name">
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label for="dob">Date Of Birth:</label>
+                      <input type="date"  class="form-control" id="dob" required="required" v-model="date_naissance">
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label for="email">Email:</label>
+                      <input type="text" class="form-control" id="email" required="required"  v-model="email" readonly>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label for="password" >Password:</label>
+                      <i class="las la-eye iconclass m-2" @click="showPassword"></i>
+                      <input type="password" class="form-control" id="password" required="required" v-model="password" readonly>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label for="phone">Phone:</label>
+                      <input type="text" class="form-control" id="phone" required="required" v-model="phone">
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label>Pays:</label>
+                      <select class="form-control" id="exampleFormControlSelect3"  @change="changePays($event)">
+                        <option v-for="(pay, key) in payslist" :key="key" :value="pay.name">{{pay.name}}</option>
+                        <option selected="">{{pays}}</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label>Ville:</label>
+                      <select class="form-control" id="exampleFormControlSelect4" @change="changeVille($event)">
+                        <option v-for="(villeId, key) in villeslist" :key="key" :value="villeId.value">{{villeId.text}}</option>
+                        <option selected="">{{ville}}</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-12">
+                      <label>Address:</label>
+                      <textarea class="form-control" name="address" rows="5" style="line-height: 22px;" v-model="adresse"></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                  <button type="reset" class="btn iq-bg-danger" @click="(e) => { this.$router.go(this.$router.currentRoute) }">Cancle</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

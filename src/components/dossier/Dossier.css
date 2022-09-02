@@ -1,0 +1,56 @@
+.avatar-dossier{
+    width: 20px;
+    height: 20px;
+ }
+ .class-status-new{
+    border-color: #B3E5FC;
+    color: #23547B;
+    background-color: #B3E5FC ;
+ }
+ .class-status-pending{
+    border-color: #FFD8B2;
+    color: #805B36;
+    background-color: #FFD8B2 ;
+ }
+ .class-status-completed{
+    border-color: #C8E6C9;
+    color: #256029;
+    background-color: #C8E6C9 ;
+ }
+ .class-status-rdv{
+    border-color: #ECCFFF;
+    color: #694382;
+    background-color: #ECCFFF ;
+ }
+ .class-status-canceled{
+    border-color: #FFCDD2;
+    color: #C63737;
+    background-color: #FFCDD2 ;
+ }
+ .class-statusIn-progress{
+    border-color: #FEEDAF;
+    color: #8A5340;
+    background-color: #FEEDAF ;
+ }
+ .clasStatus{
+    padding: 6px;
+    border-radius: 50px;
+    width: 120px;
+    height: 35px;
+    border-style: solid ;
+    border-width: 1.2px;
+ }
+ .clasStatuslbl{
+    font-size: 11px;
+    width: 250px;
+    font-weight: lighter;
+ }
+ .icon-class{
+    font-size: 30px;
+ }
+ .iconclass{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #a09e9e;
+    cursor: pointer;
+ }
